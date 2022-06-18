@@ -13,9 +13,12 @@
 		2ACC7193285E12CB00A69EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC7191285E12CB00A69EFF /* Main.storyboard */; };
 		2ACC7195285E12CE00A69EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC7194285E12CE00A69EFF /* Assets.xcassets */; };
 		2ACC7198285E12CE00A69EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC7196285E12CE00A69EFF /* LaunchScreen.storyboard */; };
+		2ACC71A4285E2E6100A69EFF /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC71A3285E2E6100A69EFF /* EndPoint.swift */; };
+		8D2422614675854C6D3A542C /* Pods_REST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5012BE2A5D6F43DC61C4C58 /* Pods_REST.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05BC1DCD246AAE441046E028 /* Pods-REST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST.release.xcconfig"; path = "Target Support Files/Pods-REST/Pods-REST.release.xcconfig"; sourceTree = "<group>"; };
 		2ACC7188285E12CA00A69EFF /* REST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACC718B285E12CA00A69EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ACC718D285E12CA00A69EFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		2ACC7194285E12CE00A69EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACC7197285E12CE00A69EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ACC7199285E12CE00A69EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACC71A3285E2E6100A69EFF /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		3463EF5BD26E47935255B7E2 /* Pods-REST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST.debug.xcconfig"; path = "Target Support Files/Pods-REST/Pods-REST.debug.xcconfig"; sourceTree = "<group>"; };
+		F5012BE2A5D6F43DC61C4C58 /* Pods_REST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2422614675854C6D3A542C /* Pods_REST.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				2ACC718A285E12CA00A69EFF /* REST */,
 				2ACC7189285E12CA00A69EFF /* Products */,
+				B2818F34C029809473E44C2C /* Pods */,
+				87B532ED8A32AFCE93F4326F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +68,7 @@
 				2ACC71A0285E138200A69EFF /* App */,
 				2ACC71A1285E138F00A69EFF /* ViewController */,
 				2ACC719F285E136800A69EFF /* Storyboard */,
+				2ACC71A2285E2E3700A69EFF /* Networking */,
 				2ACC7194285E12CE00A69EFF /* Assets.xcassets */,
 				2ACC7199285E12CE00A69EFF /* Info.plist */,
 			);
@@ -91,6 +101,31 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		2ACC71A2285E2E3700A69EFF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2ACC71A3285E2E6100A69EFF /* EndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		87B532ED8A32AFCE93F4326F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5012BE2A5D6F43DC61C4C58 /* Pods_REST.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2818F34C029809473E44C2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3463EF5BD26E47935255B7E2 /* Pods-REST.debug.xcconfig */,
+				05BC1DCD246AAE441046E028 /* Pods-REST.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ACC719C285E12CE00A69EFF /* Build configuration list for PBXNativeTarget "REST" */;
 			buildPhases = (
+				4797E83FBAFE44F4D13CBDF8 /* [CP] Check Pods Manifest.lock */,
 				2ACC7184285E12CA00A69EFF /* Sources */,
 				2ACC7185285E12CA00A69EFF /* Frameworks */,
 				2ACC7186285E12CA00A69EFF /* Resources */,
+				38C3CC0C4F4F4051C6B08713 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +194,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38C3CC0C4F4F4051C6B08713 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-REST/Pods-REST-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-REST/Pods-REST-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-REST/Pods-REST-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4797E83FBAFE44F4D13CBDF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-REST-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2ACC7184285E12CA00A69EFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -164,6 +243,7 @@
 			files = (
 				2ACC7190285E12CB00A69EFF /* ViewController.swift in Sources */,
 				2ACC718C285E12CA00A69EFF /* AppDelegate.swift in Sources */,
+				2ACC71A4285E2E6100A69EFF /* EndPoint.swift in Sources */,
 				2ACC718E285E12CA00A69EFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +388,7 @@
 		};
 		2ACC719D285E12CE00A69EFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3463EF5BD26E47935255B7E2 /* Pods-REST.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +417,7 @@
 		};
 		2ACC719E285E12CE00A69EFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BC1DCD246AAE441046E028 /* Pods-REST.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
