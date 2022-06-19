@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5790A8285F8F5600BF69DC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5790A7285F8F5600BF69DC /* APIClient.swift */; };
 		2ACC718C285E12CA00A69EFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC718B285E12CA00A69EFF /* AppDelegate.swift */; };
 		2ACC718E285E12CA00A69EFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC718D285E12CA00A69EFF /* SceneDelegate.swift */; };
 		2ACC7190285E12CB00A69EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC718F285E12CB00A69EFF /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		05BC1DCD246AAE441046E028 /* Pods-REST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST.release.xcconfig"; path = "Target Support Files/Pods-REST/Pods-REST.release.xcconfig"; sourceTree = "<group>"; };
+		2A5790A7285F8F5600BF69DC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		2ACC7188285E12CA00A69EFF /* REST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACC718B285E12CA00A69EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ACC718D285E12CA00A69EFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				2ACC71A3285E2E6100A69EFF /* EndPoint.swift */,
+				2A5790A7285F8F5600BF69DC /* APIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				2ACC7190285E12CB00A69EFF /* ViewController.swift in Sources */,
 				2ACC718C285E12CA00A69EFF /* AppDelegate.swift in Sources */,
 				2ACC71A4285E2E6100A69EFF /* EndPoint.swift in Sources */,
+				2A5790A8285F8F5600BF69DC /* APIClient.swift in Sources */,
 				2ACC718E285E12CA00A69EFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

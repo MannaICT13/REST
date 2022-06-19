@@ -10,7 +10,7 @@
 import Foundation
 import Alamofire
 
-protocol APIRouteable: URLRequestConvertible, Encodable {
+protocol APIRouteable: URLRequestConvertible {
     associatedtype Parameter: Encodable
     
     var baseURL: String { get }
