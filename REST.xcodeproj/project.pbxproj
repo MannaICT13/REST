@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A5790A8285F8F5600BF69DC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5790A7285F8F5600BF69DC /* APIClient.swift */; };
+		2A5790AB285F972800BF69DC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5790AA285F972800BF69DC /* Environment.swift */; };
 		2ACC718C285E12CA00A69EFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC718B285E12CA00A69EFF /* AppDelegate.swift */; };
 		2ACC718E285E12CA00A69EFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC718D285E12CA00A69EFF /* SceneDelegate.swift */; };
 		2ACC7190285E12CB00A69EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC718F285E12CB00A69EFF /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		05BC1DCD246AAE441046E028 /* Pods-REST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST.release.xcconfig"; path = "Target Support Files/Pods-REST/Pods-REST.release.xcconfig"; sourceTree = "<group>"; };
 		2A5790A7285F8F5600BF69DC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2A5790AA285F972800BF69DC /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		2ACC7188285E12CA00A69EFF /* REST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACC718B285E12CA00A69EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ACC718D285E12CA00A69EFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A5790A9285F970300BF69DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A5790AA285F972800BF69DC /* Environment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2ACC717F285E12CA00A69EFF = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		2ACC718A285E12CA00A69EFF /* REST */ = {
 			isa = PBXGroup;
 			children = (
+				2A5790A9285F970300BF69DC /* Model */,
 				2ACC71A0285E138200A69EFF /* App */,
 				2ACC71A1285E138F00A69EFF /* ViewController */,
 				2ACC719F285E136800A69EFF /* Storyboard */,
@@ -245,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACC7190285E12CB00A69EFF /* ViewController.swift in Sources */,
+				2A5790AB285F972800BF69DC /* Environment.swift in Sources */,
 				2ACC718C285E12CA00A69EFF /* AppDelegate.swift in Sources */,
 				2ACC71A4285E2E6100A69EFF /* EndPoint.swift in Sources */,
 				2A5790A8285F8F5600BF69DC /* APIClient.swift in Sources */,
