@@ -24,7 +24,7 @@ protocol GenericAPIClient {
 extension GenericAPIClient {
     static func startRequest<T: Decodable>(
         with request: URLRequestConvertible,
-        decoder: JSONDecoder,
+        decoder: JSONDecoder = JSONDecoder(),
         completion: @escaping (Result<T, AFError>) ->  Void) {
             AF.request(request)
                 .validate()
@@ -41,7 +41,7 @@ extension GenericAPIClient {
     static func uploadRequest<T: Decodable>(
         with request: URLRequestConvertible,
         multipartFormData: MultipartFormData,
-        decoder: JSONDecoder,
+        decoder: JSONDecoder = JSONDecoder(),
         completion: @escaping (Result<T, AFError>) -> Void) {
             AF.upload(multipartFormData: multipartFormData, with: request)
                 .validate()
