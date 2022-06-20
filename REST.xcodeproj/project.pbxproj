@@ -19,6 +19,7 @@
 		2ACC7195285E12CE00A69EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC7194285E12CE00A69EFF /* Assets.xcassets */; };
 		2ACC7198285E12CE00A69EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC7196285E12CE00A69EFF /* LaunchScreen.storyboard */; };
 		2ACC71A4285E2E6100A69EFF /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC71A3285E2E6100A69EFF /* EndPoint.swift */; };
+		2AD8B8182860CCEE0053059F /* AddressesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8B8172860CCEE0053059F /* AddressesViewModel.swift */; };
 		8D2422614675854C6D3A542C /* Pods_REST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5012BE2A5D6F43DC61C4C58 /* Pods_REST.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		2ACC7197285E12CE00A69EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ACC7199285E12CE00A69EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ACC71A3285E2E6100A69EFF /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		2AD8B8172860CCEE0053059F /* AddressesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesViewModel.swift; sourceTree = "<group>"; };
 		3463EF5BD26E47935255B7E2 /* Pods-REST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST.debug.xcconfig"; path = "Target Support Files/Pods-REST/Pods-REST.debug.xcconfig"; sourceTree = "<group>"; };
 		F5012BE2A5D6F43DC61C4C58 /* Pods_REST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,9 +95,10 @@
 		2ACC718A285E12CA00A69EFF /* REST */ = {
 			isa = PBXGroup;
 			children = (
+				2AD8B8162860CB9C0053059F /* ViewModel */,
+				2ACC71A0285E138200A69EFF /* App */,
 				2A5790AC285F98CD00BF69DC /* Services */,
 				2A5790A9285F970300BF69DC /* Model */,
-				2ACC71A0285E138200A69EFF /* App */,
 				2ACC71A1285E138F00A69EFF /* ViewController */,
 				2ACC719F285E136800A69EFF /* Storyboard */,
 				2ACC71A2285E2E3700A69EFF /* Networking */,
@@ -138,6 +141,14 @@
 				2A5790A7285F8F5600BF69DC /* APIClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		2AD8B8162860CB9C0053059F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2AD8B8172860CCEE0053059F /* AddressesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		87B532ED8A32AFCE93F4326F /* Frameworks */ = {
@@ -275,6 +286,7 @@
 				2A5790B2285F9F3E00BF69DC /* AddressesResponse.swift in Sources */,
 				2ACC7190285E12CB00A69EFF /* ViewController.swift in Sources */,
 				2A5790B0285F9DC800BF69DC /* NetworkResponse.swift in Sources */,
+				2AD8B8182860CCEE0053059F /* AddressesViewModel.swift in Sources */,
 				2A5790AB285F972800BF69DC /* Environment.swift in Sources */,
 				2ACC718C285E12CA00A69EFF /* AppDelegate.swift in Sources */,
 				2A5790AE285F990300BF69DC /* Services.swift in Sources */,

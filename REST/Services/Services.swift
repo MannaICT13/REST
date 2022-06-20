@@ -10,7 +10,7 @@ import Alamofire
 
 private struct AddressRoute: APIRouteable {
     var baseURL: String = Environment.shared.baseURL.absoluteString
-    var path: String = "addresses"
+    var path: String = "/addresses"
     var method: HTTPMethod = .get
     var parameters: Parameter?
     
@@ -28,7 +28,7 @@ private struct AddressRoute: APIRouteable {
 }
 
 enum AddressesClient: GenericAPIClient {
-    static func fetchAddresses(for quantity: String, locale: String, completion: @escaping (Result<NetworkResponse<AddressesResponse>, AFError>) -> Void) {
+    static func fetchAddresses(for quantity: String, locale: String, completion: @escaping (Result<NetworkResponse<[AddressesResponse]>, AFError>) -> Void) {
         let parameter = AddressRoute.Parameter(quantity: quantity, locale: locale)
         let route = AddressRoute(parameters: parameter)
         startRequest(with: route, completion: completion)
